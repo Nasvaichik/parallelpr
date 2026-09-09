@@ -74,3 +74,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         python -m pytest -v
         python main.py
+    - name: Test BarcodeGenerator
+      run: |
+        python test_barcode_generator.py -v
